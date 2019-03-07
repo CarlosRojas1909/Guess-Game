@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Guess Game</title>
+</head>
+<body onload="init()">
+
+    <main id="container">
+        <!-- In this container we are having 3 panels, each panel is a div  -->
+        <div class="panel">
+            <h2>I have a random number between 1-100</h2>
+            <br>
+            <h3>Dare to Guess?</h3>
+            <hr>
+            <button onclick="buttonGame()" class="panel__button">New Game</button>
+        </div>
+
+        <div class="panel">
+            <h3 class="hint">Enter your guess below &amp; press enter</h3>
+            <input onchange="compareGuess()" class="panel__input" type="text">
+            <p>Number of previous attempts: <span class="counter"></span></p>
+        </div>
+
+        <div class="panel">
+            <p>Your previous guesses:</p>
+            <p id="guessLog"></p>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

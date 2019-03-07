@@ -1,0 +1,62 @@
+/* setting up scc file */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.2rem;
+    background-image: url("/hacker-4031973_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+#container {
+    height: 100vh;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    background:rgba(100, 400, 350, 0.28);
+    opacity: .9;
+}
+
+.panel {
+    max-width: 80%;
+    margin: 5rem auto;
+    padding: 4.5rem;
+    background-color: #c7c7c7c7;
+}
+
+.panel__button {
+    background: #862d59;
+    height: 3rem;
+    width: 80%;
+    border: none;
+    outline: none;
+    margin-top: 3.5rem;
+    border-radius: 1rem;
+    color: white;
+    font-size: .8rem;
+
+}
+
+.panel__input {
+    margin: 2rem 0;
+    border-radius: 1rem;
+    width: 80%;
+    height: 3rem;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
