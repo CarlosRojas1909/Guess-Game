@@ -15,9 +15,11 @@
         <div class="panel">
             <h2>I have a random number between 1-100</h2>
             <br>
-            <h3>Dare to Guess?</h3>
-            <hr>
-            <button onclick="buttonGame()" class="panel__button">New Game</button>
+            <h3 class="header">Dare to Guess?</h3><hr>
+
+            <button id="easyBtn" onclick="easyMode()" class="panel__button">Easy: Guess in 10 attemps (default)</button>
+            <button id="hardBtn" onclick="hardMode()" class="panel__button ">Hard: Guess in 5 attemps</button>
+            <button id="newBtnNone" onclick="newGame()" class="panel__button">New Game</button>
         </div>
 
         <div class="panel">
@@ -29,6 +31,8 @@
         <div class="panel">
             <p>Your previous guesses:</p>
             <p id="guessLog"></p>
+            <button onclick="answerFunc()" class="panel__button">Show Answer</button>
+            <p id="answer"></p>
         </div>
     </main>
 

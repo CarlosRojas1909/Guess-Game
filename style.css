@@ -1,3 +1,5 @@
+/* adding some google fonts! */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700');
 /* setting up scc file */
 * {
     margin: 0;
@@ -10,7 +12,8 @@ html {
 }
 
 body {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    font-family:'Lato', sans-serif;
     background-image: url("/hacker-4031973_1920.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -20,7 +23,6 @@ body {
 }
 
 #container {
-    height: 100vh;
     max-width: 80%;
     margin: 0 auto;
     text-align: center;
@@ -38,25 +40,54 @@ body {
 }
 
 .panel__button {
-    background: #862d59;
+    background: rgba(71.8, 94.9, 47.5, .9);
     height: 3rem;
-    width: 80%;
+    width: 25%;
     border: none;
     outline: none;
     margin-top: 3.5rem;
+    margin-right: 4rem;
     border-radius: 1rem;
     color: white;
-    font-size: .8rem;
+    font-size: 1.4rem;
+
+    transition: all .2s;
+}
+
+.panel__button:hover {
+    transform: translateY(-1px);
+}
+
+.panel__button:active {
+    transform: translateY(.5px)
 
 }
+
 
 .panel__input {
     margin: 2rem 0;
     border-radius: 1rem;
-    width: 80%;
+    width: 30%;
     height: 3rem;
     text-align: center;
     border: none;
     outline: none;
 }
 
+.header {
+    margin-bottom: 2rem;
+}
+
+.activeButton {
+    background-color: black;
+}
+
+.counter,
+#guessLog {
+    display: inline-block;
+    background-color: #CEEFE1;
+}
+
+#answer {
+    margin-top: 1rem;
+}
